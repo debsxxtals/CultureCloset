@@ -1,14 +1,24 @@
+import LandingPage from '../views/LandingPage.vue'
+import HomePage from '@/views/HomePage.vue'
+
 import { createRouter, createWebHistory } from "vue-router";
-import Auth from "../views/Auth.vue";
+
 const routes = [
   {
+    name: 'LandingPage',
+    component: LandingPage,
     path: "/",
-    name: "Auth",
-    component: Auth,
   },
+  {
+    name: 'HomePage',
+    component: HomePage,
+    path: "/home",
+  },
+
 ];
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
+  history: createWebHistory(process.env.BASE_URL), // Use HTML5 history mode
+  routes, // Set the defined routes
 });
-export default router;
+
+export default router; // Export the router instance

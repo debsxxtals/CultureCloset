@@ -15,7 +15,8 @@ export default createVuetify({
         dark: true, // Indicate that this is a dark theme
         colors: {
           primary: "#D7B43D", // Set the primary color for dark theme
-          secondary: "#FFCDD2", // Example secondary color
+          secondary: "#41BBB6", // Example secondary color
+          background: "#08544f",
           // Add more custom colors here if needed
         },
       },
